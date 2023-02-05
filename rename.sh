@@ -6,7 +6,7 @@ cd $dir || exit
 
 echo un fucking pats fuck
 
-for f in $dir;do
-
-
-done
+while IFS= read -r -d '' -u 9
+do
+    name=
+done 9< <( find . -type f -exec printf '%s\0' {} + )
